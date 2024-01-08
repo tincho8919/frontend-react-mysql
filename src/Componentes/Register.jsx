@@ -44,7 +44,7 @@ function Register() {
 
         try {
             // Realizar la solicitud POST a tu API con la información del usuario
-            const response = await axios.post('https://back-react-mysql.onrender.com/user/registermysql', userData);
+            const response = await axios.post('http://localhost:9000/user/registermysql', userData);
             console.log('Respuesta del servidor:', response.data);
 
             // Verificar si la respuesta contiene un mensaje de éxito
